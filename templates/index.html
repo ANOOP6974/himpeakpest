@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <img src="{{ url_for('static', filename='images/plant.png') }}" class="plant">
+    <h1>HimPeakPest</h1>
+    <p>Your trusted agriculture input store</p>
+</div>
+
+<!-- CATEGORY SECTION -->
+<section class="section">
+    <h2>Our Products</h2>
+
+    <div class="home-cards">
+        <div class="home-card">
+            <h3>🌾 Fungicides</h3>
+            <p>Protect crops from diseases and improve yield</p>
+            <a href="/category/fungicides">View Products</a>
+        </div>
+
+        <div class="home-card">
+            <h3>🌱 Fertilizers</h3>
+            <p>Essential nutrients for healthy plant growth</p>
+            <a href="/category/fertilizers">View Products</a>
+        </div>
+
+        <div class="home-card">
+            <h3>🐛 Insecticides</h3>
+            <p>Control harmful pests effectively</p>
+            <a href="#">Coming Soon</a>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="section light">
+    <h2>Why Choose Us?</h2>
+
+    <div class="features">
+        <div class="feature">✔ Genuine Products</div>
+        <div class="feature">✔ Farmer Friendly Prices</div>
+        <div class="feature">✔ WhatsApp Ordering</div>
+        <div class="feature">✔ Expert Guidance</div>
+    </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section class="section">
+    <h2>Need Help?</h2>
+    <p>Contact us directly on WhatsApp for quick support</p>
+    <a class="buy-btn" href="https://wa.me/919805688955" target="_blank">
+        Contact on WhatsApp
+    </a>
+</section>
+<!-- WOW FARM SECTION -->
+<section class="wow-section">
+    <h2>Growing With Farmers</h2>
+
+    <div class="wow-cards">
+        <div class="wow-card">
+            🌱
+            <h3>Quality Inputs</h3>
+            <p>Only trusted and genuine agricultural products</p>
+        </div>
+
+        <div class="wow-card">
+            🚜
+            <h3>Farmer First</h3>
+            <p>Solutions designed for real field conditions</p>
+        </div>
+
+        <div class="wow-card">
+            🌾
+            <h3>Better Yield</h3>
+            <p>Helping farmers increase productivity</p>
+        </div>
+    </div>
+</section>
+
+<!-- BORDER STRIP -->
+<section class="trust-strip">
+    <div>✔ Trusted by Farmers</div>
+    <div>✔ Quality Assured</div>
+    <div>✔ Easy WhatsApp Orders</div>
+    <div>✔ Field Support</div>
+</section>
+<!-- COLOR GRADIENT STRIP -->
+<section class="color-strip">
+    <h2>Supporting Farmers with Modern Agriculture</h2>
+    <p>Healthy crops • Better yield • Trusted solutions</p>
+</section>
+<!-- COLOR FEATURE CARDS -->
+<section class="color-features">
+    <div class="color-card green">
+        🌱
+        <h3>Eco Friendly</h3>
+        <p>Safe solutions for soil & crops</p>
+    </div>
+
+    <div class="color-card blue">
+        💧
+        <h3>Water Efficient</h3>
+        <p>Optimized nutrition usage</p>
+    </div>
+
+    <div class="color-card orange">
+        ☀️
+        <h3>High Productivity</h3>
+        <p>Maximize output per acre</p>
+    </div>
+</section>
+
+{% endblock %}
