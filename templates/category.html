@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>{{ category | capitalize }}</h2>
+
+<div class="products">
+
+{% if category == "fungicides" %}
+
+<!-- Nativo -->
+<div class="product">
+    <img src="{{ url_for('static', filename='images/nativo.jpg') }}" class="product-img">
+    <h3>Nativo</h3>
+    <p>Dual-action fungicide (Tebuconazole + Trifloxystrobin)</p>
+    <p><b>Price:</b> ₹850</p>
+    <p><b>Available:</b> 20 units</p>
+    <a class="buy-btn"
+       href="https://wa.me/919805688955?text=Order%20Nativo%20fungicide%20Price%20₹850"
+       target="_blank">
+       Buy / Enquire on WhatsApp
+    </a>
+</div>
+
+<!-- Luna -->
+<div class="product">
+    <img src="{{ url_for('static', filename='images/luna.jpg') }}" class="product-img">
+    <h3>Luna Experience</h3>
+    <p>Broad-spectrum systemic fungicide</p>
+    <p><b>Price:</b> ₹920</p>
+    <p><b>Available:</b> 15 units</p>
+    <a class="buy-btn"
+       href="https://wa.me/919805688955?text=Order%20Luna%20Experience%20Price%20₹920"
+       target="_blank">
+       Buy / Enquire on WhatsApp
+    </a>
+</div>
+
+<!-- Infinito -->
+<div class="product">
+    <img src="{{ url_for('static', filename='images/infinito.jpg') }}" class="product-img">
+    <h3>Infinito</h3>
+    <p>Controls late blight and fungal diseases</p>
+    <p><b>Price:</b> ₹780</p>
+    <p><b>Available:</b> 10 units</p>
+    <a class="buy-btn"
+       href="https://wa.me/919805688955?text=Order%20Infinito%20Price%20₹780"
+       target="_blank">
+       Buy / Enquire on WhatsApp
+    </a>
+</div>
+<div class="product">
+    <img src="{{ url_for('static', filename='images/fungicide.jpg') }}" class="product-img">
+    <h3>Aliette</h3>
+    <p>Effective against downy mildew</p>
+    <p><b>Price:</b> ₹700</p>
+    <p><b>Available:</b> 12 units</p>
+
+    <a class="buy-btn"
+       href="https://wa.me/919805688955?text=Order%20Aliette%20fungicide%20Price%20₹700"
+       target="_blank">
+       Buy / Enquire on WhatsApp
+    </a>
+</div>
+
+
+{% elif category == "fertilizers" %}
+
+<!-- YaraLiva -->
+<div class="product">
+    <img src="{{ url_for('static', filename='images/yaraliva.jpg') }}" class="product-img">
+    <h3>YaraLiva</h3>
+    <p>Calcium nitrate fertilizer</p>
+    <p><b>Price:</b> ₹1350</p>
+    <p><b>Available:</b> 30 units</p>
+    <a class="buy-btn"
+       href="https://wa.me/919805688955?text=Order%20YaraLiva%20fertilizer%20Price%20₹1350"
+       target="_blank">
+       Buy / Enquire on WhatsApp
+    </a>
+</div>
+
+<!-- YaraMila -->
+<div class="product">
+    <img src="{{ url_for('static', filename='images/yaramila.jpg') }}" class="product-img">
+    <h3>YaraMila</h3>
+    <p>Balanced NPK fertilizer</p>
+    <p><b>Price:</b> ₹1450</p>
+    <p><b>Available:</b> 25 units</p>
+    <a class="buy-btn"
+       href="https://wa.me/919805688955?text=Order%20YaraMila%20fertilizer%20Price%20₹1450"
+       target="_blank">
+       Buy / Enquire on WhatsApp
+    </a>
+</div>
+
+<!-- Sagarika Gold -->
+<div class="product">
+    <img src="{{ url_for('static', filename='images/sagarika.jpg') }}" class="product-img">
+    <h3>Sagarika Gold</h3>
+    <p>Seaweed-based bio fertilizer</p>
+    <p><b>Price:</b> ₹650</p>
+    <p><b>Available:</b> 40 units</p>
+    <a class="buy-btn"
+       href="https://wa.me/919805688955?text=Order%20Sagarika%20Gold%20Price%20₹650"
+       target="_blank">
+       Buy / Enquire on WhatsApp
+    </a>
+</div>
+
+{% else %}
+
+<p>No products found in this category.</p>
+
+{% endif %}
+
+</div>
+
+{% endblock %}
