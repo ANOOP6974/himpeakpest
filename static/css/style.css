@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #2e7d32;
+    padding: 15px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.product h3 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.product-img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.buy-btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:8px 12px;
+  background:#25D366;
+  color:#fff;
+  text-decoration:none;
+  border-radius:4px;
+  font-size:14px;
+}
+.buy-btn:hover{
+  background:#1ebe5d;
+}
+.product{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.cart-btn{
+  margin-top:8px;
+  padding:7px 10px;
+  border:none;
+  background:#1976d2;
+  color:white;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.cart-btn:hover{
+  background:#0d47a1;
+}
+.hero{
+  text-align:center;
+  padding:40px 10px;
+}
+
+.plant{
+  width:120px;
+  animation: grow 3s ease-in-out infinite alternate;
+}
+
+@keyframes grow{
+  from{ transform: scale(0.7); }
+  to{ transform: scale(1.1); }
+}
+.section{
+  padding:50px 20px;
+  text-align:center;
+}
+
+.section h2{
+  color:#2e7d32;
+  margin-bottom:30px;
+}
+
+.section.light{
+  background:#f6f6f6;
+}
+
+.home-cards{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.home-card{
+  background:white;
+  padding:20px;
+  width:260px;
+  border-radius:8px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  transition:transform 0.3s ease;
+}
+
+.home-card:hover{
+  transform:translateY(-6px);
+}
+
+.home-card h3{
+  color:#2e7d32;
+}
+
+.home-card a{
+  display:inline-block;
+  margin-top:12px;
+  color:#2e7d32;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.features{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.feature{
+  background:white;
+  padding:15px 20px;
+  border-radius:6px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  font-weight:500;
+}
+/* ===== WOW SECTION ===== */
+.wow-section{
+  padding:70px 20px;
+  text-align:center;
+  background:#f9fff9;
+  border-top:4px solid #2e7d32;
+}
+
+.wow-section h2{
+  color:#2e7d32;
+  margin-bottom:40px;
+  font-size:30px;
+}
+
+.wow-cards{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+.wow-card{
+  width:260px;
+  padding:25px;
+  background:white;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+  font-size:36px;
+  transition:0.3s;
+  border:2px solid transparent;
+}
+
+.wow-card:hover{
+  transform:translateY(-8px);
+  border-color:#4caf50;
+}
+
+/* ===== TRUST STRIP ===== */
+.trust-strip{
+  background:#2e7d32;
+  color:white;
+  display:flex;
+  justify-content:space-around;
+  padding:18px;
+  font-weight:500;
+  flex-wrap:wrap;
+  gap:15px;
+  border-top:3px solid #1b5e20;
+}
+/* ===== COLOR STRIP ===== */
+.color-strip{
+  background: linear-gradient(90deg,#43a047,#66bb6a,#a5d6a7);
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
+
+.color-strip h2{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.color-strip p{
+  font-size:16px;
+  opacity:0.95;
+}
+
+/* ===== COLOR FEATURE CARDS ===== */
+.color-features{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  padding:70px 20px;
+  flex-wrap:wrap;
+  background:#f7fdf7;
+}
+
+.color-card{
+  width:260px;
+  padding:30px;
+  border-radius:18px;
+  background:white;
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+  text-align:center;
+  font-size:38px;
+  transition:0.4s;
+  border-top:6px solid;
+}
+
+.color-card h3{
+  color:#2e7d32;
+  margin:10px 0;
+}
+
+.color-card p{
+  font-size:14px;
+  color:#555;
+}
+
+.color-card:hover{
+  transform:translateY(-10px) scale(1.04);
+}
+
+/* BORDER COLORS */
+.color-card.green{ border-color:#4caf50; }
+.color-card.blue{ border-color:#1e88e5; }
+.color-card.orange{ border-color:#fb8c00; }
+
+/* ===== MOUNTAIN BACKGROUND FOR HOME ===== */
+
+body{
+  background: url("../images/mountains.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* content ko readable banane ke liye */
+.hero,
+.section,
+.wow-section,
+.color-features,
+.color-strip,
+.trust-strip{
+  background: rgba(255,255,255,0.9);
+  margin: 30px auto;
+  border-radius: 18px;
+  max-width: 1200px;
+}
+
+/* hero ko thoda transparent look */
+.hero{
+  background: rgba(255,255,255,0.85);
+}
+/* ========== MOBILE FINAL FIX ========== */
+@media (max-width: 768px){
+
+  body{
+    background-attachment: scroll; /* mobile smooth */
+  }
+
+  .hero,
+  .section,
+  .wow-section,
+  .color-features,
+  .color-strip,
+  .trust-strip{
+    margin: 15px 10px;
+    padding: 25px 15px;
+    border-radius: 14px;
+  }
+
+  .hero h1{
+    font-size: 28px;
+  }
+
+  .hero p{
+    font-size: 14px;
+  }
+
+  .plant{
+    width: 90px;
+  }
+
+  .home-cards,
+  .wow-cards,
+  .features,
+  .color-features{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-card,
+  .wow-card,
+  .color-card{
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .color-strip h2{
+    font-size: 24px;
+  }
+
+  .color-strip p{
+    font-size: 14px;
+  }
+
+  .buy-btn,
+  .hero-btn{
+    width: 100%;
+    text-align: center;
+  }
+}
